@@ -1,0 +1,16 @@
+int main( )
+{
+	string team[12] = { "Afghanistan","Australia"," Bangladesh ","England"," India"," Ireland"," Pakistan","Scotland","South Africa"," Sri Lanka","West Indies", "Zimbabwe" };
+	
+	string* Winner = new string;
+	Team( team, 12,Winner );
+	for ( int i = 0; i < sizeof( Winner ); i++ )
+	{
+		Winner[i] = *Winner;
+    }
+	for ( int i = 0; i < sizeof( Winner ); i++ )
+	{
+		delete Winner;
+	}
+	
+}
